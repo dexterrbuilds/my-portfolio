@@ -1,12 +1,3 @@
-/*
-Theme Name: Petri
-Description: Responsive App Landing Page
-Author: Bluminethemes
-Theme URI: http://bluminethemes.com/preview/themeforest/html/petri/
-Author URI: http://themeforest.net/user/Bluminethemes
-Version: 1.0
-*/
-
 (function($) {
 	"use strict";
 
