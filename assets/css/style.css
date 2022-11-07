@@ -111,3 +111,23 @@ button.rn-btn {
   border: 0 none;
   padding: 10px;
 }
+
+@media (max-width: 480px) {
+  .info {
+    justify-content: center;
+  }
+
+  .about__content-blurb {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .about__visual {
+    width: 180px;
+  }
+
+  .work__content-blurb {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
