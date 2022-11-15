@@ -371,6 +371,7 @@ textarea {
 }
 .transform-link {
   font-weight: 700;
+  text-decoration: none;
 }
 .transform-link::after {
   content: "";
@@ -572,6 +573,17 @@ input[type="button"]:focus {
 }
 .navigation__burger {
   display: none;
+}
+
+.socials {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+
+.socials svg {
+  width: 30px;
+  fill: #2046f2;
 }
 
 @media (max-width: 991px) {
