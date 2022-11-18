@@ -857,9 +857,18 @@ input[type="button"]:focus {
 }
 .about__visual {
   position: absolute;
-  left: 45px;
+  left: 0;
   bottom: 55px;
   z-index: 2;
+  animation: bounce 1s ease-in infinite alternate;
+}
+@keyframes bounce {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, 50px, 0);
+  }
 }
 .about__content {
   position: relative;
@@ -893,7 +902,7 @@ input[type="button"]:focus {
   }
   .about__visual {
     bottom: -60px;
-    left: 50%;
+    left: 25%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
   }
