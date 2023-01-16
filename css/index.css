@@ -1,0 +1,397 @@
+* {
+  box-sizing: border-box;
+}
+
+/*
+==================
+   LOADER START
+==================
+*/
+
+.section-loader {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  z-index: 9999999;
+  background-image: url(../images/light-bg.jpg);
+  background-size: 100% 100%;
+  animation: fadeout 7s forwards;
+}
+
+@keyframes fadeout {
+  0% {
+    opacity: 1;
+    width: 100%;
+  }
+  50% {
+    opacity: 1;
+    width: 100%;
+  }
+  99% {
+    opacity: 0;
+    width: 100%;
+  }
+  100% {
+    opacity: 0;
+    width: 0;
+  }
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  height: fit-content;
+  font-family: "Vollkorn";
+}
+
+.areous {
+  font-family: "Vollkorn";
+  font-size: 150px;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: type 1s steps(70, end) forwards;
+}
+
+@keyframes type {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.tagline {
+  font-size: 50px;
+  animation: showup 3s ease-in;
+}
+
+@keyframes showup {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  58% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.section-loader .loader {
+  position: relative;
+}
+
+/*
+================
+   LOADER END
+================
+*/
+
+html {
+  background: url(../images/light-bg.jpg) no-repeat center center fixed;
+  background-size: cover;
+  height: 100%;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Vollkorn";
+  color: black;
+  cursor: url(../images/ar-cursor.png), auto;
+}
+/*
+===============
+START DARKMODE
+===============
+*/
+.dark-mode {
+  background: url(../images/dark-bg.jpg) no-repeat center center fixed;
+  background-size: cover;
+  height: 100%;
+  color: white;
+}
+
+.dark-mode-resume {
+  border: 2px solid white !important;
+}
+
+.dark-mode-link {
+  color: white !important;
+}
+
+.dark-mode-icon {
+  fill: white !important;
+}
+
+.dark-mode-border {
+  border-bottom: 1px solid white !important;
+}
+
+.dark-mode-menu {
+  border: 1px solid white !important;
+  color: white !important;
+}
+
+.dark-mode-pfp {
+  background-color: white !important;
+}
+
+.dark-mode-greet {
+  background-color: black !important;
+}
+
+.dark-mode-ft {
+  background-color: black;
+  color: white;
+}
+
+.dark-mode-svg {
+  fill: white;
+  color: white;
+}
+
+/*
+===============
+END DARKMODE
+===============
+*/
+
+.bumper {
+  width: 100%;
+  height: 1800px;
+  background-color: #f3f3f3;
+}
+
+.horizontal-section,
+.horizontal-section2 {
+  padding: 20px 0 100px;
+}
+
+.second-section {
+  padding: 100px 0;
+}
+
+.sticky-wrapper,
+.sticky-wrapper2 {
+  position: sticky;
+  top: 700px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.second-sticky {
+  position: sticky;
+  top: 700px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.element-wrapper,
+.element-wrapper2 {
+  position: relative;
+  display: flex;
+  padding-left: 60px;
+}
+.second-wrapper {
+  position: relative;
+  display: flex;
+  padding-left: 60px;
+}
+
+.element {
+  width: 700px;
+  height: 600px;
+  margin: 0 20px 0 0;
+  flex-shrink: 0;
+  font-size: 200px;
+}
+
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+form {
+  font-family: "Cabin", sans-serif;
+  padding: 0;
+  width: 90%;
+  border-radius: 15px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.feedback-input {
+  color: #000;
+  font-family: "Cabin", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  border-radius: 0;
+  margin-right: 0;
+  line-height: 22px;
+  background-color: none;
+  padding: 13px 13px 13px 13px;
+  margin-bottom: 10px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  border-bottom: 2px solid #22a7f0;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.feedback-input:focus {
+  box-shadow: 0;
+  color: #3498db;
+  transition: 0.4s ease;
+  outline: none;
+  border-bottom: 2px solid black;
+  padding: 13px 13px 13px 13px;
+}
+
+.focused {
+  color: #30aed6;
+  border: #30aed6 solid 3px;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  line-height: 150%;
+  resize: vertical;
+}
+
+#button-blue {
+  font-family: "Cabin", sans-serif;
+  font-weight: 400;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  margin-top: -4px;
+  font-weight: 700;
+  transition: 0.3s ease;
+}
+
+#button-blue:hover {
+  background-color: rgba(0, 0, 0, 0);
+  color: black;
+  background: #22a7f0;
+}
+
+.submit:hover {
+  color: #22a7f0;
+}
+
+@media (min-width: 1200px) {
+  .section-loader {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    z-index: 9999999;
+    background-image: url(../images/light-bg.jpg);
+    background-size: 100% 100%;
+    animation: fadeout 7s forwards;
+  }
+
+  @keyframes fadeout {
+    0% {
+      opacity: 1;
+      width: 100%;
+    }
+    50% {
+      opacity: 1;
+      width: 100%;
+    }
+    99% {
+      opacity: 0;
+      width: 100%;
+    }
+    100% {
+      opacity: 0;
+      width: 0;
+    }
+  }
+
+  .loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+    font-family: "Vollkorn";
+  }
+
+  .areous {
+    font-family: "Vollkorn";
+    font-size: 65px;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: type 1s steps(70, end) forwards;
+  }
+
+  @keyframes type {
+    from {
+      width: 0%;
+    }
+    to {
+      width: 100%;
+    }
+  }
+
+  .tagline {
+    font-size: large;
+    animation: showup 3s ease-in;
+  }
+
+  @keyframes showup {
+    0% {
+      opacity: 0;
+    }
+    20% {
+      opacity: 0;
+    }
+    58% {
+      opacity: 1;
+    }
+    80% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .section-loader .loader {
+    position: relative;
+  }
+
+  .element {
+    width: 500px;
+    height: 400px;
+    margin: 0 20px 0 0;
+    flex-shrink: 0;
+    font-size: 200px;
+  }
+}
