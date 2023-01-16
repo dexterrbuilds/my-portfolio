@@ -1,0 +1,176 @@
+header {
+  border-bottom: 1px solid black;
+  height: 120px;
+  padding-top: 20px;
+}
+
+.toggle-button {
+  -webkit-appearance: none;
+  outline: none;
+  width: 45px;
+  height: 45px;
+  border-radius: 50px;
+  position: relative;
+  transition: 0.4s;
+  background: url("https://raw.githubusercontent.com/RuchiVS/image-upload/main/moon.png")
+    no-repeat center #212121;
+  background-size: 25px;
+  cursor: pointer;
+}
+
+.toggle-button:checked {
+  background: url("https://raw.githubusercontent.com/RuchiVS/image-upload/main/sun.png")
+    no-repeat center #ffffff;
+  background-size: 60px;
+}
+
+li {
+  list-style: none;
+  height: 100px;
+  padding-top: 30px;
+  border-bottom: 1px solid white;
+  cursor: pointer;
+}
+
+li:hover {
+  border-bottom: 2px solid #00754b;
+  color: #00754b;
+}
+
+.nav-link {
+  text-decoration: none;
+}
+
+.navbar {
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+}
+
+.nav-branding {
+  font-size: 2rem;
+}
+
+.nav-link {
+  transition: 0.7s ease;
+  color: black;
+}
+
+.hamburger {
+  display: block;
+  cursor: pointer;
+  margin-right: 20px;
+  color: black;
+  border: 2px solid black;
+  font-size: xx-large;
+  padding: 15px 35px;
+}
+
+.bar {
+  display: block;
+  width: 50px;
+  height: 5px;
+  margin: 10px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(15px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-15px) rotate(-45deg);
+}
+
+.nav-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dl-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+  margin-left: 10px;
+}
+
+.nav-menu {
+  position: fixed;
+  left: -100%;
+  top: 70px;
+  gap: 0;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.nav-items {
+  margin: 16px 0;
+  height: 50px;
+}
+
+.nav-menu.active {
+  left: 0;
+  background-color: #00754b;
+  z-index: 1000;
+  color: white;
+  font-size: xx-large;
+  padding: 10px;
+}
+
+@media (min-width: 1200px) {
+  header {
+    height: 90px;
+    padding: 0;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .nav-menu {
+    display: flex;
+    position: static;
+    flex-direction: row;
+    width: 900px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+  }
+
+  li {
+    list-style: none;
+    height: 50px;
+    border: none;
+    padding: 15px;
+  }
+
+  .nav-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .dl-btn {
+    justify-content: center;
+    margin-left: 10px;
+  }
+
+  .resume {
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    padding: 10px;
+  }
+}
