@@ -118,11 +118,11 @@ function myFunction() {
   var links = document.querySelector(".link3");
   links.classList.toggle("dark-mode-link");
 
-  var stanl = document.querySelector(".stan");
-  stanl.classList.toggle("dark-mode-link");
+  //var stanl = document.querySelector(".stan");
+  //stanl.classList.toggle("dark-mode-link");
 
-  var ameenl = document.querySelector(".ameen");
-  ameenl.classList.toggle("dark-mode-link");
+  //var ameenl = document.querySelector(".ameen");
+  //ameenl.classList.toggle("dark-mode-link");
 
   var links = document.getElementById("kcs1");
   links.classList.toggle("dark-mode-link");
