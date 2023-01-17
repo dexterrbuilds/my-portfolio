@@ -219,6 +219,11 @@ details[open] .details-info {
   position: relative;
 }
 
+.element img {
+  width: 121px;
+  height: 121px;
+}
+
 .el-rep {
   background-color: #00754b;
   height: 100%;
