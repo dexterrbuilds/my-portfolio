@@ -225,7 +225,8 @@ details[open] .details-info {
 }
 
 .el-rep {
-  background-color: #00754b;
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(5px);
   height: 100%;
   display: flex;
   justify-content: space-between;
