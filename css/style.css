@@ -248,6 +248,7 @@ details[open] .details-info {
 
 .el-rep a {
   color: black;
+  font-weight: bolder;
 }
 
 .element:hover .el-rep {
