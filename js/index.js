@@ -186,6 +186,9 @@ function myFunction() {
 
   var ftImg = document.querySelector("ft-img");
   ftImg.classList.toggle("ft-img-dm");
+
+  var fdInput = document.querySelector("feedback-input");
+  fdInput.classList.toggle("dark-feedback-input");
 }
 
 // HEADER
