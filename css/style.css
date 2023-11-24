@@ -219,7 +219,7 @@ details[open] .details-info {
   position: relative;
 }
 
-.element img {
+.p_img {
   width: 121px;
   height: 121px;
 }
@@ -422,6 +422,9 @@ hr {
 }
 
 .role {
+  display: flex;
+  align-items: center;
+  gap: 20px;
   font-size: 40px;
   font-family: "Work sans";
   font-weight: bold;
@@ -488,6 +491,31 @@ form {
 }
 ::placeholder {
   color: var(--c, black);
+}
+
+.dark-feedback-input {
+  color: white;
+  font-family: "Work Sans";
+  background: transparent;
+  font-weight: 400;
+  font-size: 44px;
+  border-radius: 0;
+  margin-right: 0;
+  line-height: 150px;
+  padding: 13px 13px 13px 13px;
+  margin-bottom: 10px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  border-bottom: 1px solid white;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+::placeholder {
+  color: var(--c, white);
 }
 
 .feedback-input:focus {

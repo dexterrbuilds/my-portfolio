@@ -220,6 +220,15 @@ END DARKMODE
   font-size: 200px;
 }
 
+.stacks {
+  display: flex;
+  gap: 20px;
+}
+
+.stack_img {
+  width: 25px;
+}
+
 details summary::-webkit-details-marker {
   display: none;
 }
